@@ -49,8 +49,9 @@ interface BookWithReadStatus extends Book {
 
 const toggleReadStatus = (book: Book, isRead: boolean = true): BookWithReadStatus => ({
     ...book,
-    isRead,
+    isRead
 });
+
 
 // ! problem 6
 
@@ -78,4 +79,8 @@ class Student extends Person {
 }
 
 
+// !  PROBLEM 7
+
+const getIntersection = (arr1: number[], arr2: number[]): number[] =>
+    arr1.filter(num => arr2.includes(num));
 
